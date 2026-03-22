@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "currentPhase": "init",
+  "phases": {
+    "init": { "status": "pending", "startedAt": null, "completedAt": null },
+    "research": { "status": "pending", "startedAt": null, "completedAt": null },
+    "design": { "status": "pending", "startedAt": null, "completedAt": null },
+    "develop": { "status": "pending", "startedAt": null, "completedAt": null },
+    "test": { "status": "pending", "startedAt": null, "completedAt": null },
+    "integrate": { "status": "pending", "startedAt": null, "completedAt": null },
+    "optimize": { "status": "pending", "startedAt": null, "completedAt": null },
+    "deploy": { "status": "pending", "startedAt": null, "completedAt": null }
+  },
+  "agents": [],
+  "worktrees": [],
+  "escalations": [],
+  "departmentStatus": {
+    "engineering": { "activeAgents": 0, "completedTasks": 0, "totalTasks": 0 },
+    "product": { "activeAgents": 0, "completedTasks": 0, "totalTasks": 0 },
+    "design": { "activeAgents": 0, "completedTasks": 0, "totalTasks": 0 },
+    "testing": { "activeAgents": 0, "completedTasks": 0, "totalTasks": 0 }
+  },
+  "lastCheckpoint": null
+}

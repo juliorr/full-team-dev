@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "autonomy": "semi-autonomous",
+  "maxAutoFixRetries": 3,
+  "escalationChain": ["role", "department-lead", "architect", "user"],
+  "checkpoints": {
+    "semi-autonomous": [
+      "research-approval",
+      "design-approval",
+      "phase-complete",
+      "test-approval",
+      "integration-approval",
+      "optimization-approval",
+      "deploy-approval",
+      "conflict-resolution",
+      "auto-fix-limit-exceeded"
+    ],
+    "high-autonomy": [
+      "deploy-approval",
+      "unresolvable-blocker"
+    ]
+  },
+  "departments": {
+    "engineering": {
+      "enabled": true,
+      "roles": {
+        "architect": { "enabled": true, "count": 1 },
+        "frontend-developer": { "enabled": true, "count": 2 },
+        "backend-developer": { "enabled": true, "count": 2 },
+        "mobile-app-developer": { "enabled": false, "count": 1 },
+        "ai-engineer": { "enabled": false, "count": 1 },
+        "devops": { "enabled": true, "count": 1 },
+        "rapid-prototyper": { "enabled": false, "count": 1 }
+      }
+    },
+    "product": {
+      "enabled": true,
+      "roles": {
+        "trend-researcher": { "enabled": true, "count": 1 },
+        "feedback-synthesizer": { "enabled": true, "count": 1 },
+        "sprint-prioritizer": { "enabled": true, "count": 1 }
+      }
+    },
+    "design": {
+      "enabled": true,
+      "roles": {
+        "ui-designer": { "enabled": true, "count": 1 },
+        "ux-researcher": { "enabled": true, "count": 1 },
+        "brand-guardian": { "enabled": true, "count": 1 },
+        "visual-storyteller": { "enabled": false, "count": 1 }
+      }
+    },
+    "testing": {
+      "enabled": true,
+      "roles": {
+        "tool-evaluator": { "enabled": true, "count": 1 },
+        "api-tester": { "enabled": true, "count": 1 },
+        "workflow-optimizer": { "enabled": true, "count": 1 },
+        "performance-benchmarker": { "enabled": true, "count": 1 },
+        "test-results-analyzer": { "enabled": true, "count": 1 },
+        "security-benchmark": { "enabled": true, "count": 1 }
+      }
+    }
+  },
+  "project": {
+    "type": null,
+    "stack": {},
+    "planPath": null
+  }
+}
